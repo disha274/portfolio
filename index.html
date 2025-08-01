@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glass UI Portfolio | Your Name</title>
+  <!-- Google Fonts: Poppins + Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar glass">
+      <div class="logo">YourName</div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="darkToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero glass" id="home">
+      <h1>Hello, I'm <span>DISHA jAISWAL</span></h1>
+      <p>Creative Frontend Developer & Designer</p>
+      <a href="#contact" class="btn-primary">Get In Touch</a>
+    </section>
+
+    <section id="about" class="section glass">
+      <h2>About Me</h2>
+      <p>
+        Passionate about creating beautiful, functional web experiences. I specialize in
+        modern JavaScript, responsive design, and user experience.
+      </p>
+    </section>
+
+    <section id="skills" class="section glass">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-bar" data-percent="95"><div class="fill"></div></div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-bar" data-percent="90"><div class="fill"></div></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar" data-percent="85"><div class="fill"></div></div>
+        </div>
+        <div class="skill">
+          <h3>React</h3>
+          <div class="skill-bar" data-percent="80"><div class="fill"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section glass">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="https://via.placeholder.com/300x180?text=Project+1" alt="Project 1" />
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio using modern HTML, CSS & JavaScript.</p>
+            <a href="#" target="_blank" class="btn-secondary">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/300x180?text=Project+2" alt="Project 2" />
+          <div class="project-info">
+            <h3>Task Manager App</h3>
+            <p>Task tracker with local storage and interactive UI.</p>
+            <a href="#" target="_blank" class="btn-secondary">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://via.placeholder.com/300x180?text=Project+3" alt="Project 3" />
+          <div class="project-info">
+            <h3>E-commerce UI</h3>
+            <p>Modern, clean e-commerce front-end prototype.</p>
+            <a href="#" target="_blank" class="btn-secondary">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section glass">
+      <h2>Contact Me</h2>
+      <form id="contactForm" novalidate>
+        <input type="text" id="name" placeholder="Your Name" required minlength="3" />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required minlength="10"></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="glass">
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
